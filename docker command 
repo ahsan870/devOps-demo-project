@@ -1,0 +1,41 @@
+
+
+1. Restart policies
+
+
+2. how to restart docker deamon?
+systemctl restart docker
+
+3. removed container 
+docker rm COntainerName ( docker rm -f - if you want to force remove)
+
+4. how to check space 
+df -h
+
+5. how to check docker space and usaged 
+
+docker system df -h
+6 . how to check docker space and usaged based on size
+docker system df -h
+
+7. automatic dellete container  after job done
+docker container run -dt -rm --name testcontainer InageNmae pin -c10 google.com
+--see docker ps
+- see docker logs testcontainer
+-- see docker ps ( it should not be runing )
+
+8. how to see layer of image
+docker history ImageName
+
+9. how to inspect images
+docker image inspect nginx --format='{{.ContainerConfig.Hostname}}'
+docker image inspect nginx | grep Hostname
+
+10. remove all unused iamges
+docker image prune -a
+
+
+
+
+
+
