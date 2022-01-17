@@ -105,6 +105,9 @@ docker run --name mysql-standalone -d -e MYSQL_ROOT_PASSWORD=rootroot -e MYSQL_D
 ##### How see top. 
 > docker top containerName
 
+##### How to run pod by command 
+> kubectl star myApp --image=nginx --port=80
+
 
 
 
